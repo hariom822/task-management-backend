@@ -9,7 +9,8 @@ const fileupload=require("express-fileupload")
 const app = express();
 const port=process.env.PORT;
 
-const url =process.env.URL
+const url =process.env.MONGO_URI;
+console.log(url)
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
